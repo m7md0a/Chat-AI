@@ -15,7 +15,7 @@ function page() {
   const [text, setText] = useState('')
   const [loading, setLoading] = useState<boolean>(false)
   const [error, setError] = useState<string|null>(null)
-  const [messages, setMessages] = useState<MessageType[]>(JSON.parse(localStorage.getItem('messages') || "[]") || [])
+  const [messages, setMessages] = useState<MessageType[]>([])
 
 
 
@@ -55,6 +55,7 @@ function page() {
   };
 
   useEffect(() => {
+    setMessages(JSON.parse(localStorage.getItem('messages') || "[]") || [])
     scrollToBottom()
   }, [])
   
