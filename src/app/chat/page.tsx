@@ -77,7 +77,7 @@ function page() {
             </div>
             <form onSubmit={chat} className="mt-6 flex">
                 <input onChange={e => setText(e.target.value)} ref={input} className="input input-bordered join-item w-3/4 md:w-full" placeholder="Text"/>
-                <button className="btn btn-primary ms-2">Translate</button>
+                <button className="btn btn-primary ms-2">Send</button>
             </form>
         </div>
         </div>
