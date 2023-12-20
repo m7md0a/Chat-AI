@@ -1,2 +1,2 @@
-# Chat-AI
-It's a project that allows you to chat with ChatGPT using Next.js and TypeScript.
+# Translate-AI
+Efficient text translation using Next.js and ChatGPT for improved interaction and responsiveness
